@@ -15,6 +15,7 @@ a{
 
 p{margin: 0;}
 nav ul{
+	transform: translateY(-10%);
 	list-style-type: none;
 	margin: 0;
 }
@@ -64,6 +65,7 @@ z-index: 2;
 
 }
 nav {
+	height: 14em;
 	border: solid;
 	border-color: white;
 	border-width:3px;
@@ -79,8 +81,14 @@ nav {
 	
 	
 }
-.nav1{transform: translateX(30vw); transition: ease 500ms ; display: none; opacity: 0}
-.nav2{display: block; opacity:1;}
+.nav1{display: none; }
+.nav2{display: block; 
+	animation: slide-menu 500ms ease-out forwards;
+}
+@keyframes slide-menu {
+	from { opacity: 0; transform: translateY(-100%); }
+	to { opacity: 1; transform: translateY(0); }
+}
 
 nav ul li::after {
 	content:'';
@@ -166,24 +174,26 @@ transform: scale(1);
 	padding: 5px;
 	float: right;
 	width: 150px;
-	height: 100%;
+	right:0;
 	color: white;
 	border-radius: 10px;
 	background-color: 
 	transparent; border:none;
+	font-size: 15px;
 }
 .sidebar2{ 
 	border:solid;
 	border-style: double;
 	border-width: 2px;
-	background-color: black;
-	border-color: yellow;}
+	background-color: #444;
+	border-color: yellow;
+}
 
 .pic2{
 	background-image: url(https://cognigen-cellular.com/images/batman-clipart-batman-the-animated-series.png);
 	background-size: cover;
 	margin: 0;
-	height: 180px;
+	height: 150px;
 	width: 90px;
 	float: right;
 	position: absolute;
@@ -198,9 +208,10 @@ opacity: 1;
 
 .pic3{
 		background-image: url(https://ya-webdesign.com/images/batarang-drawing-arkham-asylum.png);
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 	margin: 0;
-	height: 180px;
+	height: 150px;
 	width: 90px;
 	float: right;
 	position: relative;
@@ -210,6 +221,7 @@ opacity: 1;
 .joker{
 	display: block;
 }
+
 .text{
  padding: 10px;
 }
@@ -332,7 +344,9 @@ transform: scale(1);
 }
 .comic{
 	display: none;
-float: left;
+	float: left;
+
+
 }
 strong{
 	font-family: arial;
