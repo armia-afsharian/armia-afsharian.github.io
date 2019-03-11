@@ -1,0 +1,324 @@
+body{
+background:#eee;
+margin: 0;
+font-weight: 900;
+font-family: 'Thasadith', sans-serif;
+
+
+}
+a{
+	text-decoration-line: none;
+	color:yellow;
+	text-shadow: black 1px 1px 4px;
+}
+
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+}
+nav ul li{
+	cursor: pointer;
+}
+nav ul li:hover{
+	color: black;
+
+}
+.info{
+	padding: 20px;
+
+	box-shadow: 3px 3px 100px yellow;
+	background-image: linear-gradient(rgba(255,250,200,0.5) ,rgba(255,250,200,0.5)
+  ), url(https://www.pngarts.com/files/2/Batman-Logo-Transparent-Images.png);
+	background-position: center;
+	text-shadow: 1px 1px 1px white;
+}
+.prlx{
+	border:groove;
+	border-width: 5px;
+	border-color: rgb(100,100,0);
+	background-image: url(https://www.desktopbackground.org/p/2011/01/27/148341_batman-wallpapers-by-koatis-on-deviantart_1024x768_h.jpg);
+min-height: 40vh;
+min-width: 100vw;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: top ;
+text-align:center;
+}
+h2{
+z-index: 2;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	top: 60px;
+	left:50%;
+	transform: translateX(-60%);
+	right: auto;
+	font-size: 40px;
+	font-weight: 999;
+	font-family: defualt;
+	
+
+
+}
+nav {
+	position: absolute;
+	box-sizing: border-box;
+	right: 15px;
+	top:15px;
+	background-color: rgb(0,0,0, .7);
+	color:rgb(255,255,0,.5);
+	text-shadow: white 0px 0px 1px;
+	padding: 20px;
+	line-height: 50px;
+	
+	
+}
+.nav1{transform: translateX(30vw); transition: ease 500ms ; display: none; opacity: 0}
+.nav2{display: block; opacity:1;}
+
+nav ul li::after {
+	content:'';
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	left:0;
+	background-color: white;
+
+}
+#batimg{
+	height: 170px;
+	position:inherit;
+	opacity: .7;
+	display:inline-block;
+    top:0;
+    text-align: center;
+    animation: batman 4s linear infinite;
+}
+@keyframes batman {
+	0% {opacity: .2}
+	50% {opacity: .7;}
+	100% {opacity: .2;}
+}
+
+#ham{
+	cursor: pointer;
+	background-color: rgb(100,100,0,.7); 
+	height:20px;
+	float: right;
+	position:static;
+	top:-29px;
+	margin: 10px;
+	border: solid #111;
+	border-radius: 6px;
+}
+#pic1{
+	text-decoration: none;
+}
+
+#pic1::before {
+content: 'Detective Comics is an American comic book series published by DC Comics. The first volume, published from 1937 to 2011 (and later continued in 2016), is best known for introducing the superhero Batman in Detective Comics #27 (cover dated May 1939).';
+display:block;
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ), url(https://upload.wikimedia.org/wikipedia/en/a/a8/Detective_Comics_27.jpg);
+background-size: contain;
+background-position: center;
+position: absolute;
+background-repeat: no-repeat;
+width:160px;
+left:0;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+background-color: black;
+color: white;
+opacity: 0;
+text-shadow: 1px 1px 3px black;
+transform: scale(0);
+transition: ease 500ms;
+}
+#pic1:hover::before {
+	opacity: 1;
+transform: scale(1);
+
+}
+
+.walking img{
+	box-sizing: border-box;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 35px;
+	top:-43px;
+	animation:baty infinite 8s linear;
+}
+@keyframes baty {
+	from { transform: translateX(100vw); }
+	to { transform: translateX(-1vw); }
+} 
+.sidebar{
+	display: inline-block;
+	padding: 5px;
+	float: right;
+	width: 150px;
+	height: 100%;
+	border:solid;
+	border-style: dotted;
+	border-width: 2px;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+}
+.sidebar2{ background-color: transparent; border:none; }
+
+.pic2{
+	background-image: url(https://cognigen-cellular.com/images/batman-clipart-batman-the-animated-series.png);
+	background-size: cover;
+	margin: 0;
+	height: 180px;
+	width: 90px;
+	float: right;
+	position: absolute;
+	right:15px;
+	cursor: pointer;
+opacity: 1;
+}
+.pic2:hover{
+	opacity: 0;
+}
+
+
+.pic3{
+		background-image: url(https://ya-webdesign.com/images/batarang-drawing-arkham-asylum.png);
+	background-size: cover;
+	margin: 0;
+	height: 180px;
+	width: 90px;
+	float: right;
+	position: relative;
+	right:10px;
+	border-color: #eee;
+}
+.joker{
+	display: block;
+}
+.text{
+ padding: 10px;
+}
+
+.head{
+	background: linear-gradient(90deg, rgba(255,232,0,1) 0%, rgba(252,255,250,1) 50%, rgba(255,255,255,1) 100%);
+	max-height: 5em
+	width:calc( 100% - 150px);
+	background-color: white; 
+	font-family: defualt;
+	border:solid;
+
+}
+.head img{
+	display: inline-block;
+	height: 60px;
+	float: right;
+}
+.head h3{
+	text-align: center;
+	display: inline-block; 
+	padding: 3px;
+	width: 30%;
+	border-width: 1px;
+	border-radius: 10px;
+	background: linear-gradient(rgba(0,0,0,0.2),rgba(200,200,200,.5));
+	position: relative;
+	text-align: center;
+	top:-10px;
+	right:-25%;
+	white-space: nowrap;
+	box-shadow: 0px 5px 5px black;
+}
+#pic1{
+	text-decoration:overline;
+	text-decoration-style: dashed;
+}
+
+#pic5::before {
+content: 'Batman is an ongoing American comic book series featuring the DC Comics superhero Batman as its main protagonist. Batman proved to be so popular that a self-titled ongoing comic book series began publication with a cover date of Spring 1940. It was first advertised in early April 1940, one month after the first appearance of his new sidekick, Robin, the Boy Wonder.';
+display:block;
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ), url(https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/BatmanComicIssue1%2C1940.png/250px-BatmanComicIssue1%2C1940.png);
+background-size: contain;
+background-position: center;
+position: absolute;
+background-repeat: no-repeat;
+width:160px;
+left:0;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+background-color: black;
+color: white;
+opacity: 0;
+text-shadow: 1px 1px 3px black;
+transform: scale(0);
+transition: ease 500ms;
+}
+#pic5:hover::before {
+	opacity: 1;
+transform: scale(1);
+
+}
+
+#pic6::before {
+content: 'Detective Comics is an American comic book series published by DC Comics. The first volume, published from 1937 to 2011 (and later continued in 2016), is best known for introducing the superhero Batman in Detective Comics #27 (cover dated May 1939). A second series of the same title was launched in the fall of 2011 but in 2016 reverted to the original volume numbering. ';
+display:block;
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ), url(https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/DetectiveComics1.jpg/250px-DetectiveComics1.jpg);
+background-size: contain;
+background-position: center;
+position: absolute;
+background-repeat: no-repeat;
+width:160px;
+left:0;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+background-color: black;
+color: white;
+opacity: 0;
+text-shadow: 1px 1px 3px black;
+transform: scale(0);
+transition: ease 500ms;
+}
+#pic6:hover::before {
+	opacity: 1;
+transform: scale(1);
+
+}
+.tpc{
+	display: inline-block;
+	background-image: url();
+	cursor: pointer;
+}
+.tpc:hover{
+	padding: 3px;
+	border:solid;
+	border-radius: 10px;
+	border-width: 1px;
+	background-color: lightyellow;
+}
+.pic7{
+	display: inline-block;
+	float: left;
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+	border:ridge;
+	border-color:yellow;
+}
+.pic7:hover{
+	opacity: .8;
+}
+.comic{
+	display: none;
+}
+strong{
+	font-family: arial;
+}
+.bar{}
